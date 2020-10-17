@@ -6,15 +6,15 @@ function Tweet(){
         <div className='tweet'>
             <Avatar/>
             <div className="content">
-                <NameWithHandle/><Time/>
-                <Message/>
-            </div>
+            <NameWithHandle/><Time/>
+            <Message/>
             <div className="buttons">
-                <ReplayButton/>
+                <ReplyButton/>
                 <RetweetButton/>
                 <LikeButton/>
                 <MoreOptionsButton/>
             </div>
+        </div>
         </div>
     );
 }
@@ -37,8 +37,8 @@ function NameWithHandle(){
 const Time =() =>(
     <span className="time">3h ago</span>
 );
-const ReplayButton =()=>(
-    <i className="fa fa-replay-button"/>
+const ReplyButton =()=>(
+    <i className="fa fa-reply reply-button"/>
 );
 const RetweetButton=()=>(
     <i className="fa fa-retweet retweet-button"/>
