@@ -18,17 +18,6 @@ function Tweet(){
         </div>
     );
 }
-ReactDOM.render(
-    <Tweet/>,
-    document.querySelector('#root')
-);
-function Message(){
-    return(
-        <div className='message'>
-            this is message
-        </div>
-    );
-}
 function Avatar(){
     return(
         <img 
@@ -60,3 +49,14 @@ const LikeButton=()=>(
 const MoreOptionsButton=()=>(
     <i className="fa fa-ellipsis-h more-options-buttton"/>
 );
+ReactDOM.render(
+    <Tweet/>,
+    document.querySelector('#root')
+);
+function Message(){
+    return(
+        <div className='message'>
+            this is message
+        </div>
+    );
+}
