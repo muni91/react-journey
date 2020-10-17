@@ -21,7 +21,7 @@ function Tweet(){
 function Avatar(){
     return(
         <img 
-        src="https://www.gavatar.com/avatar/nothing"
+        src="https://www.gravatar.com/avatar/7fa3b767c460b54a2be4d49030b349c7"
         className="avatar"
         alt="avatar"/>
     );

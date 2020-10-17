@@ -1,7 +1,7 @@
 .tweet{
   border: 5px solid skyblue;
-  width: 546px;
-  height: 150px;
+  width: 520px;
+  height: 80px;
   font-size: 18px;
   padding: 10px;
   display: flex;
@@ -23,10 +23,10 @@
 .handle
 {
   color:#8899a6;
-  font-size:13px;
+  font-size:18px;
 }
 
-time{
+.time{
   padding-left:0.3em;
   color:#8899a6;
 }
