@@ -7,7 +7,7 @@ function Tweet({ tweet }){
         <div className='tweet'>
             <Avatar hash={tweet.gavatar}/>
             <div className="content">
-            <NameWithHandle author={Tweet.author}/><Time time={tweet.timestamp}/>
+            <NameWithHandle author={tweet.author}/><Time time={tweet.timestamp}/>
             <Message text={tweet.message}/>
             <div className="buttons">
                 <ReplyButton/>
@@ -33,7 +33,7 @@ function NameWithHandle({author}){
     return(
         <span className="name-with-handle">
             <span className="name">{name}</span>
-    <span className="handle">@{handle}</span>
+            <span className="handle">@{handle}</span>
         </span>
     );
 }
