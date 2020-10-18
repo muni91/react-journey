@@ -69,7 +69,7 @@ var testTweet ={
 };
 
 ReactDOM.render(
-    <Tweet/>,
+    <Tweet tweet = {testTweet}/>,
     document.querySelector('#root')
 );
 function Message(){
