@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import moment from 'moment';
 import './index.css';
 function Tweet({ tweet }){
     return(
@@ -27,7 +28,8 @@ function Avatar({ hsah }){
         alt="avatar"/>
     );
 }
-function NameWithHandle(){
+function NameWithHandle({author}){
+    const {name, handle} = author;
     return(
         <span className="name-with-handle">
             <span className="name">Your Name</span>
@@ -35,9 +37,12 @@ function NameWithHandle(){
         </span>
     );
 }
-const Time =() =>(
-    <span className="time">3h ago</span>
-);
+const Time =({time}) =>{
+    const timeString = moment(time).fromNow();
+    return( 
+    <span className="time">{timeString}</span>
+    );
+};
 const ReplyButton =()=>(
     <i className="fa fa-reply reply-button"/>
 );
