@@ -12,7 +12,7 @@ function Tweet({ tweet }){
             <div className="buttons">
                 <ReplyButton/>
                 <RetweetButton count = {tweet.retweets}/>
-                <LikeButton/>
+                <LikeButton like_count={tweet.likes}/>
                 <MoreOptionsButton/>
             </div>
         </div>
@@ -64,11 +64,19 @@ function getRetweetCount(count){
 const RetweetButton=( {count} )=>(
     <span className="retweet-count">
         <i className="fa fa-retweet"/>
-        {getRetweetCount}
+        {getRetweetCount(count)}
     </span>
 );
-const LikeButton=()=>(
-    <i className="fa fa-heart like-button"/>
+const LikeButton=({like_count})=>(
+    <span className="likebutton">
+        <i className="fa fa-heart"/>
+        {
+        like_count >0 && 
+        <span className="like-count">
+            {like_count}
+        </span>
+        }
+    </span>
 );
 const MoreOptionsButton=()=>(
     <i className="fa fa-ellipsis-h more-options-buttton"/>
