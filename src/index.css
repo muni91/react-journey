@@ -48,7 +48,7 @@
 .like-count, .retweet-count{
   position:relative;
   bottom:2px;
-  font-size:13px;
+  font-size:18px;
   margin-left:6px;
   font-weight:bold;
 }
