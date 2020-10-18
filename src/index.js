@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-function Tweet(){
+function Tweet({ tweet }){
     return(
         <div className='tweet'>
-            <Avatar/>
+            <Avatar hash={tweet.gavatar}/>
             <div className="content">
             <NameWithHandle/><Time/>
             <Message/>
@@ -18,10 +18,11 @@ function Tweet(){
         </div>
     );
 }
-function Avatar(){
+function Avatar({ hsah }){
+    var url ='https://www.gavatar.com/avatar/${hash}'
     return(
         <img 
-        src="https://www.gravatar.com/avatar/7fa3b767c460b54a2be4d49030b349c7"
+        src={url}
         className="avatar"
         alt="avatar"/>
     );
@@ -49,6 +50,19 @@ const LikeButton=()=>(
 const MoreOptionsButton=()=>(
     <i className="fa fa-ellipsis-h more-options-buttton"/>
 );
+
+var testTweet ={
+    message:"something about React.",
+    gavatar:"xyz",
+    author:{
+        handle:"react_love",
+        name:"React_Dev"
+    },
+    likes:2,
+    retweets:10,
+    timestamp:"2020-10-18  22:38:56"
+};
+
 ReactDOM.render(
     <Tweet/>,
     document.querySelector('#root')
