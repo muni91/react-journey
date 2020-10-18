@@ -8,10 +8,10 @@ function Tweet({ tweet }){
             <Avatar hash={tweet.gavatar}/>
             <div className="content">
             <NameWithHandle author={Tweet.author}/><Time time={tweet.timestamp}/>
-            <Message/>
+            <Message text={tweet.message}/>
             <div className="buttons">
                 <ReplyButton/>
-                <RetweetButton/>
+                <RetweetButton count = {tweet.retweets}/>
                 <LikeButton/>
                 <MoreOptionsButton/>
             </div>
@@ -46,8 +46,26 @@ const Time =({time}) =>{
 const ReplyButton =()=>(
     <i className="fa fa-reply reply-button"/>
 );
-const RetweetButton=()=>(
-    <i className="fa fa-retweet retweet-button"/>
+
+function getRetweetCount(count){
+    if(count > 0){
+        return(
+            <span className="retweet-count">
+                {count}
+            </span>
+        );
+    }else{
+        return null;
+    }
+}
+
+
+
+const RetweetButton=( {count} )=>(
+    <span className="retweet-count">
+        <i className="fa fa-retweet"/>
+        {getRetweetCount}
+    </span>
 );
 const LikeButton=()=>(
     <i className="fa fa-heart like-button"/>
@@ -72,10 +90,10 @@ ReactDOM.render(
     <Tweet tweet = {testTweet}/>,
     document.querySelector('#root')
 );
-function Message(){
+function Message({text}){
     return(
         <div className='message'>
-            this is message
+            {text}
         </div>
     );
 }
