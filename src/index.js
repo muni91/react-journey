@@ -19,7 +19,7 @@ function Tweet({ tweet }){
     );
 }
 function Avatar({ hsah }){
-    var url ='https://www.gavatar.com/avatar/${hash}'
+    var url =`https://www.gavatar.com/avatar/${hash}`;
     return(
         <img 
         src={url}
