@@ -20,7 +20,7 @@ function Tweet({ tweet }){
     );
 }
 function Avatar({ hash }){
-    var url =`https://www.gavatar.com/avatar/${hash}`;
+    var url =`${hash}`;
     return(
         <img 
         src={url}
@@ -84,7 +84,7 @@ const MoreOptionsButton=()=>(
 
 var testTweet ={
     message:"something about React.",
-    gavatar:"xyz",
+    gavatar:"https://www.gravatar.com/avatar/6f8f57715090da2632453988d9a1501b",
     author:{
         handle:"react_love",
         name:"React_Dev"
