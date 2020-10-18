@@ -62,7 +62,7 @@ function getRetweetCount(count){
 
 
 const RetweetButton=( {count} )=>(
-    <span className="retweet-count">
+    <span className="retweetbutton">
         <i className="fa fa-retweet"/>
         {getRetweetCount(count)}
     </span>
