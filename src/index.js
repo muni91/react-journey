@@ -19,7 +19,7 @@ function Tweet({ tweet }){
         </div>
     );
 }
-function Avatar({ hsah }){
+function Avatar({ hash }){
     var url =`https://www.gavatar.com/avatar/${hash}`;
     return(
         <img 
@@ -32,8 +32,8 @@ function NameWithHandle({author}){
     const {name, handle} = author;
     return(
         <span className="name-with-handle">
-            <span className="name">Your Name</span>
-            <span className="handle">@yourhandle</span>
+            <span className="name">{name}</span>
+    <span className="handle">@{handle}</span>
         </span>
     );
 }
