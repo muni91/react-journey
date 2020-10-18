@@ -6,7 +6,7 @@ function Tweet({ tweet }){
         <div className='tweet'>
             <Avatar hash={tweet.gavatar}/>
             <div className="content">
-            <NameWithHandle/><Time/>
+            <NameWithHandle author={Tweet.author}/><Time time={tweet.timestamp}/>
             <Message/>
             <div className="buttons">
                 <ReplyButton/>
