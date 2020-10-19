@@ -1,3 +1,9 @@
+## i'm a begineer
+
+These codes is based on the book called **pureReact** and the **Documentation of React**.I hope this book has lot many examples for the strong foundation of react.js along with hands practice snippets with detailed explanation great work by Author: **Dave Ceddia**
+
+React Docs are very helpful during initial stage of uderstanding **react syntax**.
+
 ## Available Scripts
 
 In the project directory, you can run:
