@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## I'm a begineer
+
+These codes is based on the book called **PureReact** and the **Documentation of React**.I hope this book has lot many examples for the strong foundation of react.js along with hands on practice snippets with detailed explanation great work by Author: **Dave Ceddia**
+
+React Docs are very helpful during initial stage of uderstanding **react syntax**.
 
 ## Available Scripts
 
